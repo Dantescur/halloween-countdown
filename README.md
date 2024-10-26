@@ -1,6 +1,7 @@
 # Halloween Countdown
 
-![./Screenshot from 2024-10-26 18-01-25.png](A screenshoot)
+![https://github.com/Dantescur/halloween-countdown/blob/main/Screenshot%20from%202024-10-26%2018-01-25.png?raw=true](A screenshoot)
+
 - [Halloween Countdown](#halloween-countdown)
   - [Welcome to the Halloween Countdown project! This project is a dynamic countdown timer leading up to Halloween with internationalization (i18n) support for multiple languages](#welcome-to-the-halloween-countdown-project-this-project-is-a-dynamic-countdown-timer-leading-up-to-halloween-with-internationalization-i18n-support-for-multiple-languages)
     - [Features](#features)
@@ -16,76 +17,66 @@
 
 ### Features
 
-  * 🎃 Countdown Timer: Real-time countdown to Halloween.
+- 🎃 Countdown Timer: Real-time countdown to Halloween.
 
-  * 🌍 Internationalization: Supports English, Spanish, Japanese, French, German, and Chinese.
+- 🌍 Internationalization: Supports English, Spanish, Japanese, French, German, and Chinese.
 
-  * 💅 Smooth Animations: Enhanced user experience with GSAP and Lenis.
+- 💅 Smooth Animations: Enhanced user experience with GSAP and Lenis.
 
-  * 🛠️ Persistent Locale: Remembers user’s language preference across sessions.
+- 🛠️ Persistent Locale: Remembers user’s language preference across sessions.
 
 ### Technologies Used
 
-  * Vue 3: Frontend framework for building user interfaces.
+- Vue 3: Frontend framework for building user interfaces.
 
-  * TypeScript: Strongly typed programming language for building robust code.
+- TypeScript: Strongly typed programming language for building robust code.
 
- * GSAP: GreenSock Animation Platform for animations.
+- GSAP: GreenSock Animation Platform for animations.
 
- * Lenis: Smooth scroll library.
+- Lenis: Smooth scroll library.
 
- * Vue I18n: Internationalization plugin for Vue.
+- Vue I18n: Internationalization plugin for Vue.
 
 ### Installation
 
-* Clone the repository:
+- Clone the repository:
 
-    `
-    git clone <https://github.com/yourusername/halloween-countdown.git>
-    `
+  `git clone <https://github.com/yourusername/halloween-countdown.git`
 
-    `
-    cd halloween-countdown
-    `
+  `cd halloween-countdown`
 
- * Install dependencies:
+- Install dependencies:
 
-    `
-    npm install
-    `
+  `npm install`
 
- * Start the development server:
+- Start the development server:
 
-    `
-    pnpm run dev
-    `
-
+  `pnpm run dev`
 
 ### Usage
 
-  * Visit http://localhost:5173 to see the countdown in action.
+- Visit <http://localhost:5173> to see the countdown in action.
 
-  * Change the language from the dropdown in the navigation bar to see the localization in action.
-
+- Change the language from the dropdown in the navigation bar to see the localization in action.
 
 ### Internationalization
 
-#### This project supports multiple languages. You can easily add or modify translations by updating the locales files in the src directory.
+#### This project supports multiple languages. You can easily add or modify translations by updating the locales files in the src directory
 
-##### Currently supported languages:
+##### Currently supported languages
 
-  1. English (en)
+1. English (en)
 
-  2. Spanish (es)
+2. Spanish (es)
 
-  3. Japanese (ja)
+3. Japanese (ja)
 
-  4. French (fr)
+4. French (fr)
 
-  5. German (de)
+5. German (de)
 
-  6. Chinese (zh)
+6. Chinese (zh)
 
 ### License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

@@ -1,6 +1,6 @@
 # Halloween Countdown
 
-![https://github.com/Dantescur/halloween-countdown/blob/main/Screenshot%20from%202024-10-26%2018-01-25.png?raw=true](A screenshoot)
+![./screenshoot.png](A screenshoot)
 
 - [Halloween Countdown](#halloween-countdown)
   - [Welcome to the Halloween Countdown project! This project is a dynamic countdown timer leading up to Halloween with internationalization (i18n) support for multiple languages](#welcome-to-the-halloween-countdown-project-this-project-is-a-dynamic-countdown-timer-leading-up-to-halloween-with-internationalization-i18n-support-for-multiple-languages)
@@ -41,7 +41,7 @@
 
 - Clone the repository:
 
-  `git clone <https://github.com/yourusername/halloween-countdown.git`
+  `git clone <https://github.com/Dantescur/halloween-countdown.git`
 
   `cd halloween-countdown`
 
@@ -61,7 +61,7 @@
 
 ### Internationalization
 
-#### This project supports multiple languages. You can easily add or modify translations by updating the locales files in the src directory
+#### This project supports multiple languages(**this readme not** 😆). You can easily add or modify translations by updating the locales files in the src directory
 
 ##### Currently supported languages
 

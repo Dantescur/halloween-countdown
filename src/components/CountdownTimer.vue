@@ -37,9 +37,9 @@ const calculateTimeLeft = () => {
   if (halloween.getTime() < Date.now()) {
     halloween.setFullYear(halloween.getFullYear() + 1);
   }
-  
+
   const difference = halloween.getTime() - Date.now();
-  
+
   const newTimeLeft = {
     days: {
       prev: timeLeft.value.days.value,
@@ -74,7 +74,7 @@ const calculateTimeLeft = () => {
 onMounted(() => {
   calculateTimeLeft();
   timer = window.setInterval(calculateTimeLeft, 1000);
-  
+
   gsap.from('.countdown-card', {
     scale: 0,
     opacity: 0,
@@ -199,8 +199,15 @@ onUnmounted(() => {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 768px) {
@@ -208,6 +215,10 @@ onUnmounted(() => {
     flex-wrap: wrap;
     gap: 1rem;
   }
+
+  /* .countdown-card:last-child { */
+  /*   margin-right: 1.9rem; */
+  /* } */
 
   .countdown-card {
     min-width: 90px;
@@ -224,6 +235,12 @@ onUnmounted(() => {
 
   .label {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .countdown-separator {
+    display: none;
   }
 }
 </style>

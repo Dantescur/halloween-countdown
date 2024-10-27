@@ -69,6 +69,32 @@ const calculateTimeLeft = () => {
   });
 
   timeLeft.value = newTimeLeft;
+
+  if (newTimeLeft.seconds.value === 0) {
+    crazyButyAnim()
+  }
+};
+
+const crazyButyAnim = () => {
+  const cards = document.querySelectorAll('.countdown-card');
+  cards.forEach((card, index) => {
+    gsap.fromTo(card, { x: 0, opacity: 1 }, {
+      x: -200,
+      opacity: 0,
+      duration: 0.5,
+      ease: 'power2.inOut',
+      delay: index * 0.2,
+      onComplete: () => {
+        gsap.fromTo(card, { x: 200, opacity: 0 }, {
+          x: 0,
+          opacity: 1,
+          duration: 0.5,
+          ease: 'power2.inOut'
+        });
+        return void 0; // Ensuring the return type is void
+      }
+    });
+  });
 };
 
 onMounted(() => {

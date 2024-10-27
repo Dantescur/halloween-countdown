@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
 import gsap from 'gsap';
+import { MotionPathPlugin } from 'gsap/all';
+
+gsap.registerPlugin(MotionPathPlugin)
 
 interface TimeUnit {
   value: number;
@@ -75,23 +78,24 @@ const calculateTimeLeft = () => {
   }
 };
 
+
 const crazyButyAnim = () => {
   const cards = document.querySelectorAll('.countdown-card');
   cards.forEach((card, index) => {
     gsap.fromTo(card, { x: 0, opacity: 1 }, {
       x: -200,
       opacity: 0,
-      duration: 0.5,
+      duration: 0.3,
       ease: 'power2.inOut',
       delay: index * 0.2,
       onComplete: () => {
         gsap.fromTo(card, { x: 200, opacity: 0 }, {
           x: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.3,
           ease: 'power2.inOut'
         });
-        return void 0; // Ensuring the return type is void
+        return void 0;
       }
     });
   });

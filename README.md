@@ -1,7 +1,5 @@
 # Halloween Countdown
 
-![./screenshoot.png](A screenshoot)
-
 - [Halloween Countdown](#halloween-countdown)
   - [Welcome to the Halloween Countdown project! This project is a dynamic countdown timer leading up to Halloween with internationalization (i18n) support for multiple languages](#welcome-to-the-halloween-countdown-project-this-project-is-a-dynamic-countdown-timer-leading-up-to-halloween-with-internationalization-i18n-support-for-multiple-languages)
     - [Features](#features)

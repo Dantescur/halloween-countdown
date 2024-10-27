@@ -70,7 +70,7 @@ const calculateTimeLeft = () => {
 
   timeLeft.value = newTimeLeft;
 
-  if (newTimeLeft.seconds.value === 0) {
+  if (newTimeLeft.seconds.value % 15 === 0) {
     crazyButyAnim()
   }
 };
